@@ -1,8 +1,22 @@
 {
     "name": "BikeHub",
-    "description": "Proyecto de IoT",
+    "description": "Proyecto de IoT - Monitoreo de Bicicletas Compartidas",
     "version": "0.0.1",
-    "dependencies": {},
+    "private": true,
+    "scripts": {
+        "start": "node-red --userDir /data --port $PORT flows.json"
+    },
+    "dependencies": {
+        "node-red": "^3.1.0",
+        "@flowfuse/node-red-dashboard": "~1.30.2",
+        "@flowfuse/node-red-dashboard-2-ui-led": "~1.1.0",
+        "@hotnipi/node-red-dashboard-2-ui-gauge-linear": "~0.1.10",
+        "axios": "^1.17.0",
+        "node-red-dashboard": "~3.6.6",
+        "node-red-node-mysql": "~2.0.0",
+        "node-red-node-openweathermap": "~1.0.1",
+        "node-red-node-random": "~0.4.1"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
