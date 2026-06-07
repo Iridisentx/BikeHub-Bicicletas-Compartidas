@@ -214,7 +214,7 @@
         "name": "Enviar por WebSocket",
         "server": "websocket_server",
         "client": "",
-        "x": 1100,
+        "x": 1080,
         "y": 260,
         "wires": []
     },
